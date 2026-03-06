@@ -1,6 +1,6 @@
 # Smart College Attendance System
 
-A Django + Machine Learning based system that automates classroom attendance using face recognition.
+A smart academic management system that combines face-recognition attendance with student performance and activity monitoring.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Django](https://img.shields.io/badge/Django-Backend-green)
