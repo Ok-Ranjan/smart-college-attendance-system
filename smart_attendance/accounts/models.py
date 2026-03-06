@@ -13,6 +13,20 @@ class Student(models.Model):
     def __str__(self):
         return f"{self.name} ({self.roll_number})"
     
+class StudentFace(models.Model):
+
+    student = models.ForeignKey(
+        Student,
+        on_delete=models.CASCADE,
+        related_name="faces"
+    )
+
+    image = models.ImageField(upload_to='student_faces/')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Face Image of {self.student.name}"
 
 class Teacher(models.Model):
     name = models.CharField(max_length=100)
