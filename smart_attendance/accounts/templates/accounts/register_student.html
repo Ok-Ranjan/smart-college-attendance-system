@@ -1,0 +1,13 @@
+<h2>Register Student</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ student_form.as_p }}
+
+    {{ face_form.as_p }}
+
+    <button type="submit">Register Student</button>
+    
+</form>

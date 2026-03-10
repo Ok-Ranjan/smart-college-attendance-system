@@ -1,4 +1,5 @@
 from django.db import models
+import json
 
 # Create your models here.
 class Student(models.Model):
@@ -22,6 +23,8 @@ class StudentFace(models.Model):
     )
 
     image = models.ImageField(upload_to='student_faces/')
+
+    encoding = models.TextField(blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
