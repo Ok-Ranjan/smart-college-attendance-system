@@ -10,6 +10,6 @@ class Attendance(models.Model):
     status = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.student.name} - {self.data}"
+        return f"{self.student.name} - {self.date}"
     
 
